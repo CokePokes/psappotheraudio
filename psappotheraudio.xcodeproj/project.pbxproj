@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5D361D2261D3EE0005DA6AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D361D1261D3EE0005DA6AD /* Foundation.framework */; };
+		B5D361DA261D3EE0005DA6AD /* psappotheraudio.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5D361D9261D3EE0005DA6AD /* psappotheraudio.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5D361CE261D3EE0005DA6AD /* psappotheraudio.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = psappotheraudio.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D361D1261D3EE0005DA6AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5D361D6261D3EE0005DA6AD /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		B5D361D8261D3EE0005DA6AD /* psappotheraudio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "psappotheraudio-Prefix.pch"; path = "../psappotheraudio-Prefix.pch"; sourceTree = "<group>"; };
+		B5D361D9261D3EE0005DA6AD /* psappotheraudio.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = psappotheraudio.mm; sourceTree = "<group>"; };
+		B5D361DE261D3EE0005DA6AD /* psappotheraudio.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = psappotheraudio.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5D361CA261D3EE0005DA6AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D361D2261D3EE0005DA6AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5D361C4261D3EE0005DA6AD = {
+			isa = PBXGroup;
+			children = (
+				B5D361D3261D3EE0005DA6AD /* psappotheraudio */,
+				B5D361D0261D3EE0005DA6AD /* Frameworks */,
+				B5D361CF261D3EE0005DA6AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5D361CF261D3EE0005DA6AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5D361CE261D3EE0005DA6AD /* psappotheraudio.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5D361D0261D3EE0005DA6AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5D361D1261D3EE0005DA6AD /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5D361D3261D3EE0005DA6AD /* psappotheraudio */ = {
+			isa = PBXGroup;
+			children = (
+				B5D361D9261D3EE0005DA6AD /* psappotheraudio.mm */,
+				B5D361D4261D3EE0005DA6AD /* Package */,
+				B5D361D7261D3EE0005DA6AD /* Supporting Files */,
+			);
+			path = psappotheraudio;
+			sourceTree = "<group>";
+		};
+		B5D361D4261D3EE0005DA6AD /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				B5D361D5261D3EE0005DA6AD /* DEBIAN */,
+				B5D361DB261D3EE0005DA6AD /* Library */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		B5D361D5261D3EE0005DA6AD /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				B5D361D6261D3EE0005DA6AD /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		B5D361D7261D3EE0005DA6AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5D361D8261D3EE0005DA6AD /* psappotheraudio-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5D361DB261D3EE0005DA6AD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B5D361DC261D3EE0005DA6AD /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		B5D361DC261D3EE0005DA6AD /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				B5D361DD261D3EE0005DA6AD /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		B5D361DD261D3EE0005DA6AD /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				B5D361DE261D3EE0005DA6AD /* psappotheraudio.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B5D361CB261D3EE0005DA6AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B5D361CD261D3EE0005DA6AD /* psappotheraudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D361E1261D3EE0005DA6AD /* Build configuration list for PBXNativeTarget "psappotheraudio" */;
+			buildPhases = (
+				B5D361C9261D3EE0005DA6AD /* Sources */,
+				B5D361CA261D3EE0005DA6AD /* Frameworks */,
+				B5D361CB261D3EE0005DA6AD /* Headers */,
+				B5D361CC261D3EE0005DA6AD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = psappotheraudio;
+			productName = psappotheraudio;
+			productReference = B5D361CE261D3EE0005DA6AD /* psappotheraudio.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5D361C5261D3EE0005DA6AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				TargetAttributes = {
+					B5D361CD261D3EE0005DA6AD = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B5D361C8261D3EE0005DA6AD /* Build configuration list for PBXProject "psappotheraudio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5D361C4261D3EE0005DA6AD;
+			productRefGroup = B5D361CF261D3EE0005DA6AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5D361CD261D3EE0005DA6AD /* psappotheraudio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5D361CC261D3EE0005DA6AD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5D361C9261D3EE0005DA6AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D361DA261D3EE0005DA6AD /* psappotheraudio.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B5D361DF261D3EE0005DA6AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"psappotheraudio\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5D361E0261D3EE0005DA6AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"psappotheraudio\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		B5D361E2261D3EE0005DA6AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUYLZA5X3V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "psappotheraudio/psappotheraudio-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5D361E3261D3EE0005DA6AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUYLZA5X3V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "psappotheraudio/psappotheraudio-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5D361C8261D3EE0005DA6AD /* Build configuration list for PBXProject "psappotheraudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D361DF261D3EE0005DA6AD /* Release */,
+				B5D361E0261D3EE0005DA6AD /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5D361E1261D3EE0005DA6AD /* Build configuration list for PBXNativeTarget "psappotheraudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D361E2261D3EE0005DA6AD /* Release */,
+				B5D361E3261D3EE0005DA6AD /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5D361C5261D3EE0005DA6AD /* Project object */;
+}
