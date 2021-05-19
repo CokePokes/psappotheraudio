@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		B5D361D2261D3EE0005DA6AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D361D1261D3EE0005DA6AD /* Foundation.framework */; };
 		B5D361DA261D3EE0005DA6AD /* psappotheraudio.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5D361D9261D3EE0005DA6AD /* psappotheraudio.mm */; };
+		B5D361E5261D4461005DA6AD /* psappotheraudio-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = B5D361E4261D4461005DA6AD /* psappotheraudio-Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5D361CE261D3EE0005DA6AD /* psappotheraudio.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = psappotheraudio.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D361D1261D3EE0005DA6AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B5D361D6261D3EE0005DA6AD /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
-		B5D361D8261D3EE0005DA6AD /* psappotheraudio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "psappotheraudio-Prefix.pch"; path = "../psappotheraudio-Prefix.pch"; sourceTree = "<group>"; };
 		B5D361D9261D3EE0005DA6AD /* psappotheraudio.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = psappotheraudio.mm; sourceTree = "<group>"; };
 		B5D361DE261D3EE0005DA6AD /* psappotheraudio.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = psappotheraudio.plist; sourceTree = "<group>"; };
+		B5D361E4261D4461005DA6AD /* psappotheraudio-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "psappotheraudio-Prefix.pch"; path = "psappotheraudio/psappotheraudio-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +88,7 @@
 		B5D361D7261D3EE0005DA6AD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B5D361D8261D3EE0005DA6AD /* psappotheraudio-Prefix.pch */,
+				B5D361E4261D4461005DA6AD /* psappotheraudio-Prefix.pch */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -123,6 +124,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D361E5261D4461005DA6AD /* psappotheraudio-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +215,14 @@
 		B5D361DF261D3EE0005DA6AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					arm64,
+					arm64e,
+				);
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -231,6 +241,7 @@
 				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"psappotheraudio\\\"\"";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -238,6 +249,14 @@
 		B5D361E0261D3EE0005DA6AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					arm64,
+					arm64e,
+				);
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -264,6 +283,7 @@
 				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"psappotheraudio\\\"\"";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
 				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
@@ -273,7 +293,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = AUYLZA5X3V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -287,7 +307,7 @@
 				MonkeyDevBuildPackageOnAnyBuild = NO;
 				MonkeyDevClearUiCacheOnInstall = NO;
 				MonkeyDevCopyOnBuild = NO;
-				MonkeyDevDeviceIP = "";
+				MonkeyDevDeviceIP = 192.168.1.95;
 				MonkeyDevDevicePassword = "";
 				MonkeyDevDevicePort = "";
 				MonkeyDevInstallOnAnyBuild = YES;
@@ -303,7 +323,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = AUYLZA5X3V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,7 +337,7 @@
 				MonkeyDevBuildPackageOnAnyBuild = NO;
 				MonkeyDevClearUiCacheOnInstall = NO;
 				MonkeyDevCopyOnBuild = NO;
-				MonkeyDevDeviceIP = "";
+				MonkeyDevDeviceIP = 192.168.1.95;
 				MonkeyDevDevicePassword = "";
 				MonkeyDevDevicePort = "";
 				MonkeyDevInstallOnAnyBuild = YES;
